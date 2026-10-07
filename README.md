@@ -1,9 +1,9 @@
 # ml_project_energy_drink_consumer_survey
 This project analyzes consumer survey data to understand energy drink consumption behavior, brand preferences, purchasing patterns, health concerns, and price sensitivity
 
-The target variable is **`price_range`**, which represents the price category of the energy drink typically purchased by the respondent. :chatgpt-content-reference{index="1"} :chatgpt-content-reference{index="2"}
+The target variable is **`price_range`**, which represents the price category of the energy drink typically purchased by the respondent.
 
-The project involves data cleaning, feature engineering, categorical encoding, model training, model comparison, and selection of the best-performing machine learning model. :chatgpt-content-reference{index="3"} :chatgpt-content-reference{index="4"}
+The project involves data cleaning, feature engineering, categorical encoding, model training, model comparison, and selection of the best-performing machine learning model. :c
 # 2. Task List
 
 - **Data Understanding:** Understand the business problem, dataset, columns, data types, and target variable.
@@ -14,47 +14,46 @@ The project involves data cleaning, feature engineering, categorical encoding, m
   - Handle missing values.
   - Replace missing income values with **"Not Reported"**.
   - Handle missing values in consumption frequency and purchase channel.
-  - Correct spelling and formatting inconsistencies in categorical data. :chatgpt-content-reference{index="5"}
+  - Correct spelling and formatting inconsistencies in categorical data.
 
 - **Feature Engineering:**
   - Create `age_group`.
   - Create **CF-AB Score** (`cf_ab_score`) using consumption frequency and brand awareness.
   - Create **Zone Affluence Score** (`zas_score`) using zone and income level.
-  - Create **Brand Switching Indicator** (`bsi`). :chatgpt-content-reference{index="6"} :chatgpt-content-reference{index="7"}
+  - Create **Brand Switching Indicator** (`bsi`).
 
 - **Logical Outlier Removal:**
   - Identify logically inconsistent records, such as students appearing in older age groups.
-  - Remove records where the occupation and age group do not make logical sense. :chatgpt-content-reference{index="8"}
+  - Remove records where the occupation and age group do not make logical sense.
 
 - **Feature and Target Preparation:**
   - Create feature matrix `X`.
   - Create target variable `y`.
-  - Remove `respondent_id` and `price_range` from the feature set. :chatgpt-content-reference{index="9"}
+  - Remove `respondent_id` and `price_range` from the feature set. 
 
 - **Data Splitting:**
   - Split the data into **75% training** and **25% testing**.
-  - Use `random_state = 42`. :chatgpt-content-reference{index="10"}
+  - Use `random_state = 42`.
 
 - **Feature Encoding:**
   - Apply Label Encoding to selected categorical features.
   - Apply One-Hot Encoding to the remaining categorical features.
-  - Label encode the target variable `price_range`. :chatgpt-content-reference{index="11"}
-
+  - Label encode the target variable `price_range`.
 - **Model Building:**
   - Gaussian Naive Bayes
   - Logistic Regression
   - Support Vector Machine
   - Random Forest
   - XGBoost
-  - LightGBM :chatgpt-content-reference{index="12"}
+  - LightGBM
 
 - **Model Evaluation:**
   - Calculate accuracy for each model.
   - Generate classification reports.
-  - Compare model performance. :chatgpt-content-reference{index="13"}
+  - Compare model performance.
 
 - **Model Selection:**
-  - Select the best-performing model for further use and deployment. :chatgpt-content-reference{index="14"}
+  - Select the best-performing model for further use and deployment.
 
 
 # 3. Overall Learning

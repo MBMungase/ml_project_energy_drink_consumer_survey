@@ -3,7 +3,7 @@ This project analyzes consumer survey data to understand energy drink consumptio
 
 The target variable is **`price_range`**, which represents the price category of the energy drink typically purchased by the respondent.
 
-The project involves data cleaning, feature engineering, categorical encoding, model training, model comparison, and selection of the best-performing machine learning model. :c
+The project involves data cleaning, feature engineering, categorical encoding, model training, model comparison, and selection of the best-performing machine learning model.
 # 2. Task List
 
 - **Data Understanding:** Understand the business problem, dataset, columns, data types, and target variable.
